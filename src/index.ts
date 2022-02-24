@@ -1,6 +1,7 @@
 import { Transformer } from '@parcel/plugin';
 import path from 'path';
 import { marked } from 'marked';
+import yamlFront from 'yaml-front-matter';
 
 export default new Transformer({
   async loadConfig({ config }) {
@@ -32,9 +33,10 @@ export default new Transformer({
   },
   async transform({ asset, config }) {
     let code = await asset.getCode();
+    code = yamlFront.loadFront(code);
     const option: { marked?: marked.MarkedOptions } = config || {};
     if (option.marked) {
-      code = marked.parse(code, { ...option.marked });
+      code.__content = marked.parse(code.__content, { ...option.marked });
     }
     asset.type = 'js';
     asset.setCode(`export default ${JSON.stringify(code)}`);
