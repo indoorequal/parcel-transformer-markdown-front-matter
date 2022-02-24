@@ -11,24 +11,29 @@ export default new Transformer({
       path.resolve('.markedrc.js'),
       path.resolve('marked.config.js'),
     ]);
+    const defaultConfig = {
+      marked: {
+        breaks: true,
+        pedantic: false,
+        gfm: true,
+        tables: true,
+        sanitize: false,
+        smartLists: true,
+        smartypants: false,
+        xhtml: false,
+      },
+    };
     if (conf) {
       let isJavascript = path.extname(conf.filePath) === '.js';
       if (isJavascript) {
         config.invalidateOnStartup();
       }
       return {
-        marked: {
-          breaks: true,
-          pedantic: false,
-          gfm: true,
-          tables: true,
-          sanitize: false,
-          smartLists: true,
-          smartypants: false,
-          xhtml: false,
-        },
+        ...defaultConfig,
         ...conf.contents as any,
       };
+    } else {
+      return defaultConfig;
     }
   },
   async transform({ asset, config }) {
