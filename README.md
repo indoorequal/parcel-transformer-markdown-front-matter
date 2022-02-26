@@ -1,25 +1,18 @@
-parcel-transformer-markdown
-===
+# parcel-transformer-markdown-front-matter
 
-[![NPM Downloads](https://img.shields.io/npm/dm/parcel-transformer-markdown.svg?style=flat)](https://www.npmjs.com/package/parcel-transformer-markdown)
-[![Build & Deploy](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/parcel-transformer-markdown.svg)](https://www.npmjs.com/package/parcel-transformer-markdown)
 
-[**`Parcel 2`**](https://parceljs.org/) plugin for loader markdown string, markdown output HTML.
+[![NPM Downloads](https://img.shields.io/npm/dm/parcel-transformer-markdown-front-matter.svg?style=flat)](https://www.npmjs.com/package/parcel-transformer-markdown-front-matter)
+[![Build & Deploy](https://github.com/indoorequal/parcel-transformer-markdown-front-matter/actions/workflows/ci.yml/badge.svg)](https://github.com/indoorequal/parcel-transformer-markdown-front-matter/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/parcel-transformer-markdown-front-matter.svg)](https://www.npmjs.com/package/parcel-transformer-markdown-front-matter)
 
-> ⚠️ ~~[`parcel-plugin-markdown-string`](https://github.com/jaywcjlove/parcel-plugin-markdown-string/tree/parcel-plugin-markdown-string)~~ => [`parcel-transformer-markdown`](https://www.npmjs.com/package/parcel-transformer-markdown)
-
-```diff
-- parcel-plugin-markdown-string 
-+ parcel-transformer-markdown
-```
+[**`Parcel 2`**](https://parceljs.org/) plugin to load markdown file and YAML Front matter
 
 ## Example usage
 
 Install the plugin
 
 ```bash
-npm install parcel-transformer-markdown --save-dev
+npm install parcel-transformer-markdown-front-matter --save-dev
 ```
 
 `.parcelrc`
@@ -28,7 +21,7 @@ npm install parcel-transformer-markdown --save-dev
 {
   "extends": "@parcel/config-default",
   "transformers": {
-    "*.md": [ "parcel-transformer-markdown" ]
+    "*.md": [ "parcel-transformer-markdown-front-matter" ]
   }
 }
 ```
@@ -46,10 +39,10 @@ npm install parcel-transformer-markdown --save-dev
 Import your markdown files! Output HTML string.
 
 ```js
-import HTMLStr from './Markdown.md';
+import file from './Markdown.md';
 
-console.log(HTMLStr) // => Output HTML string.
-document.body.innerHTML = HTMLStr;
+console.log(file.__content) // => Output HTML string.
+document.body.innerHTML = file.__content;
 ```
 
 **Output Markdown string**
@@ -62,10 +55,10 @@ document.body.innerHTML = HTMLStr;
 ```
 
 ```js
-import str from './Markdown.md';
+import file from './Markdown.md';
 
-console.log(str) // => Output Markdown string.
-document.body.innerHTML = str;
+console.log(file.__content) // => Output Markdown string.
+document.body.innerHTML = file.__content;
 ```
 
 ## Configuration

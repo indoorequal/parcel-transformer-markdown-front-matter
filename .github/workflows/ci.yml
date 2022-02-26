@@ -52,7 +52,7 @@ jobs:
             {
               "extends": "@parcel/config-default",
               "transformers": {
-                "*.md": [ "parcel-transformer-markdown" ]
+                "*.md": [ "parcel-transformer-markdown-front-matter" ]
               }
             }
             ```
