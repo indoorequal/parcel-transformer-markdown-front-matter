@@ -61,7 +61,7 @@ jobs:
 
             ${{ steps.changelog.outputs.changelog }}
 
-      - name: 📦 parcel-transformer-markdown publish to NPM
+      - name: 📦 parcel-transformer-markdown-front-matter publish to NPM
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
