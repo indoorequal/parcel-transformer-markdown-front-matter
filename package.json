@@ -33,7 +33,7 @@
     "parcel": "^2.2.0"
   },
   "devDependencies": {
-    "tsbb": "3.5.4"
+    "tsbb": "3.7.9"
   },
   "dependencies": {
     "@babel/runtime": "^7.16.7",
