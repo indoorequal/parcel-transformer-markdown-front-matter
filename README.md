@@ -26,22 +26,25 @@ npm install parcel-transformer-markdown-front-matter --save-dev
 }
 ```
 
-`index.html`:
+`Markdown.md`:
 
-```html
-<!DOCTYPE html>
-<div id="root"></div>
-<script type="module" src="index.js"></script>
+```markdown
+---
+title: My title
+---
+
+# Markdown content
 ```
 
 **Output HTML string**
 
-Import your markdown files! Output HTML string.
+Import your markdown file, and get the HTML content and the yaml front matter properties.
 
 ```js
 import file from './Markdown.md';
 
 console.log(file.__content) // => Output HTML string.
+console.log(file.title) // output title property
 document.body.innerHTML = file.__content;
 ```
 
