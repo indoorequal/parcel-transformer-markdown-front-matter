@@ -1,7 +1,7 @@
 {
   "name": "parcel-transformer-markdown-front-matter",
   "version": "2.0.1",
-  "description": "Parcel plugin for loader markdown string & Markdown transformer.",
+  "description": "Parcel plugin to load markdown file with yaml-front-matter.",
   "author": "kenny wong <wowohoo@qq.com>",
   "license": "MIT",
   "main": "./lib/index.js",
