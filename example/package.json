@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "start": "rm -rf .parcel-cache && parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir doc"
+    "start": "parcel serve --no-cache",
+    "build": "parcel build --no-cache"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.2.0",
-    "parcel-transformer-markdown": "file:../",
-    "posthtml-parser": "^0.12.0"
+    "parcel-transformer-markdown-front-matter": "workspace:"
   }
 }

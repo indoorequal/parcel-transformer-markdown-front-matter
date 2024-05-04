@@ -1,3 +1,4 @@
-import html from '../../README.md';
-document.body.innerHTML = html;
-console.log('HTML=>', html)
+import markdown from './myfile.md';
+
+document.body.innerHTML = markdown.__content;
+document.title = markdown.title;

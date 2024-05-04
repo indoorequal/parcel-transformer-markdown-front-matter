@@ -1756,6 +1756,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"example@workspace:example":
+  version: 0.0.0-use.local
+  resolution: "example@workspace:example"
+  dependencies:
+    parcel: "npm:^2.2.0"
+    parcel-transformer-markdown-front-matter: "workspace:"
+  languageName: unknown
+  linkType: soft
+
 "exponential-backoff@npm:^3.1.1":
   version: 3.1.1
   resolution: "exponential-backoff@npm:3.1.1"
@@ -2577,7 +2586,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parcel-transformer-markdown-front-matter@workspace:.":
+"parcel-transformer-markdown-front-matter@workspace:, parcel-transformer-markdown-front-matter@workspace:.":
   version: 0.0.0-use.local
   resolution: "parcel-transformer-markdown-front-matter@workspace:."
   dependencies:
@@ -2595,7 +2604,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"parcel@npm:^2.12.0":
+"parcel@npm:^2.12.0, parcel@npm:^2.2.0":
   version: 2.12.0
   resolution: "parcel@npm:2.12.0"
   dependencies:
