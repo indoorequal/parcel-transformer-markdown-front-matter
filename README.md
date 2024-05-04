@@ -89,4 +89,7 @@ There is a `marked` configuration that converts `markdown` to `HTML`. Otherwise 
 
 ## License
 
-MIT © [Kenny Wong](https://wangchujiang.com)
+MIT
+
+© 2024 François de Metz
+© 2022 [Kenny Wong](https://wangchujiang.com)
