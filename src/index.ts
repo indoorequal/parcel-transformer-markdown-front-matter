@@ -1,5 +1,5 @@
+import path from 'node:path';
 import { Transformer } from '@parcel/plugin';
-import path from 'path';
 import { marked } from 'marked';
 import { loadFront } from 'yaml-front-matter';
 
