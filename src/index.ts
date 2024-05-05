@@ -1,7 +1,8 @@
 import path from 'node:path';
 import { Transformer } from '@parcel/plugin';
-import { marked } from 'marked';
-import { loadFront } from 'yaml-front-matter';
+import { marked, type MarkedOptions } from 'marked';
+import yamlFrontmatter from 'yaml-front-matter';
+const { loadFront } = yamlFrontmatter;
 
 export default new Transformer({
   async loadConfig({ config }) {
@@ -39,7 +40,7 @@ export default new Transformer({
   async transform({ asset, config }) {
     const code = await asset.getCode();
     const frontMatter = loadFront(code);
-    const option: { marked?: marked.MarkedOptions } = config || {};
+    const option: { marked?: MarkedOptions } = config || {};
     const result = { ...frontMatter };
     if (option.marked) {
       result.__content = marked.parse(frontMatter.__content, { ...option.marked });
