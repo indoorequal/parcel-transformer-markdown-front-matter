@@ -13,6 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.2.0",
-    "parcel-transformer-markdown-front-matter": "workspace:"
+    "parcel-transformer-markdown-front-matter": "workspace:^"
   }
 }

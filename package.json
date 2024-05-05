@@ -12,7 +12,7 @@
     "watch": "parcel watch",
     "build": "parcel build",
     "example": "yarn workspace example build",
-    "test": "rm -rf .parcel-cache && rm -rf dist && node test/index.cjs"
+    "test": "yarn workspace test test"
   },
   "keywords": [
     "parcel",
@@ -52,7 +52,8 @@
     "parcel": "^2.2.0"
   },
   "workspaces": [
-    "example"
+    "example/",
+    "test/"
   ],
   "packageManager": "yarn@4.2.1"
 }
