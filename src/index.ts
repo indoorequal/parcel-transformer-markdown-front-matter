@@ -8,9 +8,9 @@ export default new Transformer({
   async loadConfig({ config }) {
     // @ts-ignore
     const conf = await config.getConfig([
-      path.resolve('.markedrc'),
-      path.resolve('.markedrc.js'),
-      path.resolve('marked.config.js'),
+      '.markedrc',
+      '.markedrc.js',
+      'marked.config.js',
     ]);
     const defaultConfig = {
       marked: {
