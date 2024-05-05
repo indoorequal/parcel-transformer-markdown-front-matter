@@ -37,14 +37,15 @@ export default new Transformer({
     }
   },
   async transform({ asset, config }) {
-    let code = await asset.getCode();
-    code = loadFront(code);
+    const code = await asset.getCode();
+    const frontMatter = loadFront(code);
     const option: { marked?: marked.MarkedOptions } = config || {};
+    const result = { ...frontMatter };
     if (option.marked) {
-      code.__content = marked.parse(code.__content, { ...option.marked });
+      result.__content = marked.parse(frontMatter.__content, { ...option.marked });
     }
     asset.type = 'js';
-    asset.setCode(`export default ${JSON.stringify(code)}`);
+    asset.setCode(`export default ${JSON.stringify(result)}`);
     return [asset];
   },
 });
