@@ -5,17 +5,16 @@
 [![Build & Deploy](https://github.com/indoorequal/parcel-transformer-markdown-front-matter/actions/workflows/ci.yml/badge.svg)](https://github.com/indoorequal/parcel-transformer-markdown-front-matter/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/parcel-transformer-markdown-front-matter.svg)](https://www.npmjs.com/package/parcel-transformer-markdown-front-matter)
 
-[**`Parcel 2`**](https://parceljs.org/) plugin to load markdown file and YAML Front matter
+A [**`Parcel 2`**](https://parceljs.org/) plugin to load markdown file with YAML Front matter. It uses [Marked][] to render markdown.
 
-## Example usage
+## Usage
 
 Install the plugin
 
 ```bash
 npm install parcel-transformer-markdown-front-matter --save-dev
 ```
-
-`.parcelrc`
+Add `parcel-transformer-markdown-front-matter` transformer to the `.parcelrc`
 
 ```js
 {
@@ -77,9 +76,22 @@ There is a `marked` configuration that converts `markdown` to `HTML`. Otherwise 
   "marked": {
     "breaks": true,
     "pedantic": false,
-    "gfm": true,
+    "gfm": true
   }
 }
+```
+
+### Marked extensions
+
+To use [marked extensions](https://marked.js.org/using_advanced#extensions), you must use a javascript configuration file. Install your extensions and instanciate in the configuration.
+
+```javascript
+/// .markedrc.js
+const { gfmHeadingId } = require('marked-gfm-heading-id');
+
+module.exports = {
+ extensions: [gfmHeadingId({ prefix: 'test-' })],
+};
 ```
 
 ## License
@@ -87,4 +99,7 @@ There is a `marked` configuration that converts `markdown` to `HTML`. Otherwise 
 MIT
 
 © 2024 François de Metz
+
 © 2022 [Kenny Wong](https://wangchujiang.com)
+
+[marked]: https://marked.js.org/
