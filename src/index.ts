@@ -1,8 +1,7 @@
 import path from 'node:path';
 import { Transformer } from '@parcel/plugin';
 import { marked, type MarkedOptions, type MarkedExtension } from 'marked';
-import yamlFrontmatter from 'yaml-front-matter';
-const { loadFront } = yamlFrontmatter;
+import { loadFront } from 'yaml-front-matter';
 
 export default new Transformer({
   async loadConfig({ config }) {

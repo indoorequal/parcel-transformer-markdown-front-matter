@@ -4,11 +4,10 @@
   "description": "Parcel plugin to load markdown file with yaml-front-matter.",
   "author": "François de Metz <francois@2metz.fr>",
   "license": "MIT",
-  "type": "module",
   "source": "./src/index.ts",
   "main": "./dist/main.js",
-  "module": "dist/module.js",
-  "types": "dist/index.d.ts",
+  "module": "./dist/module.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
