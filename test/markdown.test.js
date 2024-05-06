@@ -20,8 +20,8 @@ async function copySiteToTempDir() {
   return dir;
 }
 
-function writeMarkedConfig(dir, config) {
-  return fs.writeFile(path.join(dir, '.markedrc'), JSON.stringify(config));
+function writeMarkedConfig(dir, file, content) {
+  return fs.writeFile(path.join(dir, file), content);
 }
 
 function renderSite(dir) {
@@ -76,14 +76,14 @@ test('render a markdown file to HTML', async () => {
   const logs = await runAndGetConsoleOutput(path.join(dir, 'dist'));
   expect(logs).toEqual([
     'parcel-transformer-markdown-front-matter',
-    `<h1 id="markdown">Markdown</h1>
+    `<h1>Markdown</h1>
 <p>Markdown content</p>`
   ]);
 });
 
 test('render a markdown file without HTML', async () => {
   const dir = await copySiteToTempDir();
-  await writeMarkedConfig(dir, { marked: false });
+  await writeMarkedConfig(dir, '.markedrc', JSON.stringify({ marked: false }));
   await renderSite(dir);
   const logs = await runAndGetConsoleOutput(path.join(dir, 'dist'));
   expect(logs).toEqual([
@@ -91,5 +91,35 @@ test('render a markdown file without HTML', async () => {
     `# Markdown
 
 Markdown content`
+  ]);
+});
+
+test('render a markdown file with marked extension: marked-gfm-heading-id', async () => {
+  const dir = await copySiteToTempDir();
+  await writeMarkedConfig(dir, '.markedrc.js', `const { gfmHeadingId } = require('marked-gfm-heading-id');
+module.exports = {
+ extensions: [gfmHeadingId()]
+};`);
+  await renderSite(dir);
+  const logs = await runAndGetConsoleOutput(path.join(dir, 'dist'));
+  expect(logs).toEqual([
+    'parcel-transformer-markdown-front-matter',
+    `<h1 id="markdown">Markdown</h1>
+<p>Markdown content</p>`
+  ]);
+});
+
+test('render a markdown file with marked extension and options: marked-gfm-heading-id', async () => {
+  const dir = await copySiteToTempDir();
+  await writeMarkedConfig(dir, '.markedrc.js', `const { gfmHeadingId } = require('marked-gfm-heading-id');
+module.exports = {
+ extensions: [gfmHeadingId({ prefix: 'test-' })]
+};`);
+  await renderSite(dir);
+  const logs = await runAndGetConsoleOutput(path.join(dir, 'dist'));
+  expect(logs).toEqual([
+    'parcel-transformer-markdown-front-matter',
+    `<h1 id="test-markdown">Markdown</h1>
+<p>Markdown content</p>`
   ]);
 });

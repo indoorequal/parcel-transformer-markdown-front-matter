@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { Transformer } from '@parcel/plugin';
-import { marked, type MarkedOptions } from 'marked';
+import { marked, type MarkedOptions, type MarkedExtension } from 'marked';
 import yamlFrontmatter from 'yaml-front-matter';
 const { loadFront } = yamlFrontmatter;
 
@@ -17,12 +17,10 @@ export default new Transformer({
         breaks: true,
         pedantic: false,
         gfm: true,
-        tables: true,
-        sanitize: false,
-        smartLists: true,
-        smartypants: false,
-        xhtml: false,
+        headerIds: false,
+        mangle: false
       },
+      extensions: [],
     };
     if (conf) {
       let isJavascript = path.extname(conf.filePath) === '.js';
@@ -40,7 +38,10 @@ export default new Transformer({
   async transform({ asset, config }) {
     const code = await asset.getCode();
     const frontMatter = loadFront(code);
-    const option: { marked?: MarkedOptions } = config || {};
+    const option: { marked?: MarkedOptions, extensions?: MarkedExtension[] } = config || {};
+    option.extensions?.forEach((extension) => {
+      marked.use(extension);
+    })
     const result = { ...frontMatter };
     if (option.marked) {
       result.__content = marked.parse(frontMatter.__content, { ...option.marked });

@@ -78,11 +78,6 @@ There is a `marked` configuration that converts `markdown` to `HTML`. Otherwise 
     "breaks": true,
     "pedantic": false,
     "gfm": true,
-    "tables": true,
-    "sanitize": false,
-    "smartLists": true,
-    "smartypants": false,
-    "xhtml": false
   }
 }
 ```
