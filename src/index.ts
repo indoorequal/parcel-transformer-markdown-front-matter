@@ -42,7 +42,7 @@ export default new Transformer({
     })
     const result = { ...frontMatter };
     if (option.marked) {
-      result.__content = marked.parse(frontMatter.__content, { ...option.marked });
+      result.__content = await marked.parse(frontMatter.__content, { ...option.marked });
     }
     asset.type = 'js';
     asset.setCode(`export default ${JSON.stringify(result)}`);
