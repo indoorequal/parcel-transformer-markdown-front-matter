@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@parcel/plugin": "^2.2.0",
-    "marked": "^9.0.0",
+    "marked": "^10.0.0",
     "yaml-front-matter": "^4.1.1"
   },
   "engines": {
