@@ -16,9 +16,7 @@ export default new Transformer({
       marked: {
         breaks: true,
         pedantic: false,
-        gfm: true,
-        headerIds: false,
-        mangle: false
+        gfm: true
       },
       extensions: [],
     };
