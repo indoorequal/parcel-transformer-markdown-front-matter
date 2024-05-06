@@ -4256,12 +4256,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^7.0.0":
-  version: 7.0.5
-  resolution: "marked@npm:7.0.5"
+"marked@npm:^8.0.0":
+  version: 8.0.1
+  resolution: "marked@npm:8.0.1"
   bin:
     marked: bin/marked.js
-  checksum: 10c0/a75f90e4ea7ec90cf6b66aaf1d7dd533df3d12d2a974c838f66f823d027edc8ba1d36b2920d4a24cf8b711e6ebc4625016cdf7d1ce95a818a091a2629e9a52dd
+  checksum: 10c0/9f4cf0dbea660cd7ebbf3b3c3900e76866a78b3b843857c82a638182fee6405041e2345deeca672f35eb7017b7ce031a3154967781d3a97432f3ba85a428efc0
   languageName: node
   linkType: hard
 
@@ -4689,7 +4689,7 @@ __metadata:
     "@parcel/plugin": "npm:^2.2.0"
     "@parcel/transformer-typescript-types": "npm:2.12.0"
     "@types/yaml-front-matter": "npm:^4.1.3"
-    marked: "npm:^7.0.0"
+    marked: "npm:^8.0.0"
     parcel: "npm:^2.12.0"
     typescript: "npm:>=3.0.0"
     yaml-front-matter: "npm:^4.1.1"
