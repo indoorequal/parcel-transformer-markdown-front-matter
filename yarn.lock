@@ -4240,14 +4240,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked-gfm-heading-id@npm:^3.1.0":
-  version: 3.2.0
-  resolution: "marked-gfm-heading-id@npm:3.2.0"
+"marked-gfm-heading-id@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "marked-gfm-heading-id@npm:4.0.0"
   dependencies:
     github-slugger: "npm:^2.0.0"
   peerDependencies:
-    marked: ">=4 <13"
-  checksum: 10c0/aba170f042049248047db4c1202c9cf3434858ca8e15b1b0d42905a6086135e98ac5edc8437c48c1206402cdb1f0fd0fbdcad410792a7d7150bec6095108b365
+    marked: ">=13 <14"
+  checksum: 10c0/6d4709f7a5f6d89c2b75f397adb5fa04bd9c3f33cb234ddbb37c4f466ae817d9683cd1ffeb6796463cd34cd9f72e77b44e4d913c358b433913e479e7e37eaf6b
   languageName: node
   linkType: hard
 
@@ -5405,7 +5405,7 @@ __metadata:
     "@parcel/core": "npm:^2.12.0"
     jest: "npm:^29.7.0"
     jsdom: "npm:^24.0.0"
-    marked-gfm-heading-id: "npm:^3.1.0"
+    marked-gfm-heading-id: "npm:^4.0.0"
     parcel-transformer-markdown-front-matter: "workspace:^"
   languageName: unknown
   linkType: soft
