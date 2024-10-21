@@ -713,9 +713,9 @@ __metadata:
   linkType: hard
 
 "@lezer/common@npm:^1.0.0":
-  version: 1.2.2
-  resolution: "@lezer/common@npm:1.2.2"
-  checksum: 10c0/8dac6afded15606a94fadbdbbc3b3115489c4fc0580ac103efdbe6b3dae7f3ef4d82250a45e80c7530240b9c9b09f1389975bf288651eb6d3236ee962c060e35
+  version: 1.2.3
+  resolution: "@lezer/common@npm:1.2.3"
+  checksum: 10c0/fe9f8e111080ef94037a34ca2af1221c8d01c1763ba5ecf708a286185c76119509a5d19d924c8842172716716ddce22d7834394670c4a9432f0ba9f3b7c0f50d
   languageName: node
   linkType: hard
 
@@ -1747,90 +1747,90 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-darwin-arm64@npm:1.7.35"
+"@swc/core-darwin-arm64@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-darwin-arm64@npm:1.7.36"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-darwin-x64@npm:1.7.35"
+"@swc/core-darwin-x64@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-darwin-x64@npm:1.7.36"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.7.35"
+"@swc/core-linux-arm-gnueabihf@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.7.36"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.7.35"
+"@swc/core-linux-arm64-gnu@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.7.36"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-linux-arm64-musl@npm:1.7.35"
+"@swc/core-linux-arm64-musl@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-linux-arm64-musl@npm:1.7.36"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-linux-x64-gnu@npm:1.7.35"
+"@swc/core-linux-x64-gnu@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-linux-x64-gnu@npm:1.7.36"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-linux-x64-musl@npm:1.7.35"
+"@swc/core-linux-x64-musl@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-linux-x64-musl@npm:1.7.36"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.7.35"
+"@swc/core-win32-arm64-msvc@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.7.36"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.7.35"
+"@swc/core-win32-ia32-msvc@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.7.36"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.7.35":
-  version: 1.7.35
-  resolution: "@swc/core-win32-x64-msvc@npm:1.7.35"
+"@swc/core-win32-x64-msvc@npm:1.7.36":
+  version: 1.7.36
+  resolution: "@swc/core-win32-x64-msvc@npm:1.7.36"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
 "@swc/core@npm:^1.3.36":
-  version: 1.7.35
-  resolution: "@swc/core@npm:1.7.35"
+  version: 1.7.36
+  resolution: "@swc/core@npm:1.7.36"
   dependencies:
-    "@swc/core-darwin-arm64": "npm:1.7.35"
-    "@swc/core-darwin-x64": "npm:1.7.35"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.7.35"
-    "@swc/core-linux-arm64-gnu": "npm:1.7.35"
-    "@swc/core-linux-arm64-musl": "npm:1.7.35"
-    "@swc/core-linux-x64-gnu": "npm:1.7.35"
-    "@swc/core-linux-x64-musl": "npm:1.7.35"
-    "@swc/core-win32-arm64-msvc": "npm:1.7.35"
-    "@swc/core-win32-ia32-msvc": "npm:1.7.35"
-    "@swc/core-win32-x64-msvc": "npm:1.7.35"
+    "@swc/core-darwin-arm64": "npm:1.7.36"
+    "@swc/core-darwin-x64": "npm:1.7.36"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.7.36"
+    "@swc/core-linux-arm64-gnu": "npm:1.7.36"
+    "@swc/core-linux-arm64-musl": "npm:1.7.36"
+    "@swc/core-linux-x64-gnu": "npm:1.7.36"
+    "@swc/core-linux-x64-musl": "npm:1.7.36"
+    "@swc/core-win32-arm64-msvc": "npm:1.7.36"
+    "@swc/core-win32-ia32-msvc": "npm:1.7.36"
+    "@swc/core-win32-x64-msvc": "npm:1.7.36"
     "@swc/counter": "npm:^0.1.3"
     "@swc/types": "npm:^0.1.13"
   peerDependencies:
@@ -1859,7 +1859,7 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 10c0/aae11f2f311f16a21348e33768debe2295a7e0a04f4b37ffbbb15cf5303e0cd08cf0c72661b72f8e4e33cf530d82c15bb2cef090548c65c4bf3ab3854724465b
+  checksum: 10c0/8ab5382900a20dd2c37236fb09961a9407aa761a8fd5b4cd1c06bca564145d49f1375d819ead96b6cc0c6787bc8f8050eeb32e620ffbfed8734a2bc950368009
   languageName: node
   linkType: hard
 
@@ -1978,11 +1978,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.7.5
-  resolution: "@types/node@npm:22.7.5"
+  version: 22.7.7
+  resolution: "@types/node@npm:22.7.7"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/cf11f74f1a26053ec58066616e3a8685b6bcd7259bc569738b8f752009f9f0f7f85a1b2d24908e5b0f752482d1e8b6babdf1fbb25758711ec7bb9500bfcd6e60
+  checksum: 10c0/07268a1e990ad9d9b1865092881317ea679a46eb6706d83a8874eec75fdddae6cfd6452e4e68b651561183e2a8f8548276f3155744bc402c2545978c19b70d65
   languageName: node
   linkType: hard
 
@@ -2342,9 +2342,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001663":
-  version: 1.0.30001668
-  resolution: "caniuse-lite@npm:1.0.30001668"
-  checksum: 10c0/247b3200aeec55038f3a11f3e6ab66f656c54d30df7b01d8d447efaba9af96ad3e17128da2ddd42ddc9cb6c286bac65b634a20955b3cc6619be7ca4601fddc8e
+  version: 1.0.30001669
+  resolution: "caniuse-lite@npm:1.0.30001669"
+  checksum: 10c0/f125f23440d3dbb6c25ffb8d55f4ce48af36a84d0932b152b3b74f143a4170cbe92e02b0a9676209c86609bf7bf34119ff10cc2bc7c1b7ea40e936cc16598408
   languageName: node
   linkType: hard
 
@@ -2750,9 +2750,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.28":
-  version: 1.5.36
-  resolution: "electron-to-chromium@npm:1.5.36"
-  checksum: 10c0/cd8d0de7801107f2b2744b5b18641c969a49b0503996cc1a586bb79d893020d0c4e916ac1935603eea65104b4fc1096bc339e0151531dca9e0f0ce0c1882e2d8
+  version: 1.5.41
+  resolution: "electron-to-chromium@npm:1.5.41"
+  checksum: 10c0/97b82383963029e6ed0bd7a71eb527f640c8cf658c9e43c776b0257b3c65e366590ac54135683a21e4474a156b8be78717d6e94d3c1def84b69f92bf48f2390f
   languageName: node
   linkType: hard
 
@@ -4259,11 +4259,11 @@ __metadata:
   linkType: hard
 
 "marked@npm:^14.0.0":
-  version: 14.1.2
-  resolution: "marked@npm:14.1.2"
+  version: 14.1.3
+  resolution: "marked@npm:14.1.3"
   bin:
     marked: bin/marked.js
-  checksum: 10c0/fb636a97a2f11acf4cca092836020281ff3bc573f3295b4f4639135a6188e4815b910ec8572eb5686e25580c9c383daf605b4a00fcb5e5626e5c65914755e4bd
+  checksum: 10c0/074485dc4a1f73cd12724d61c3c6d0d21590f3f441aca5a26d52c79641c9b147eb3b3244f524c25255a59f81445b2040747ca6665c4a2508b7e653a7dcb6f65f
   languageName: node
   linkType: hard
 
@@ -4483,9 +4483,9 @@ __metadata:
   linkType: hard
 
 "negotiator@npm:^0.6.3":
-  version: 0.6.3
-  resolution: "negotiator@npm:0.6.3"
-  checksum: 10c0/3ec9fd413e7bf071c937ae60d572bc67155262068ed522cf4b3be5edbe6ddf67d095ec03a3a14ebf8fc8e95f8e1d61be4869db0dbb0de696f6b837358bd43fc2
+  version: 0.6.4
+  resolution: "negotiator@npm:0.6.4"
+  checksum: 10c0/3e677139c7fb7628a6f36335bf11a885a62c21d5390204590a1a214a5631fcbe5ea74ef6a610b60afe84b4d975cbe0566a23f20ee17c77c73e74b80032108dea
   languageName: node
   linkType: hard
 
@@ -4802,9 +4802,9 @@ __metadata:
   linkType: hard
 
 "picocolors@npm:^1.0.0, picocolors@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "picocolors@npm:1.1.0"
-  checksum: 10c0/86946f6032148801ef09c051c6fb13b5cf942eaf147e30ea79edb91dd32d700934edebe782a1078ff859fb2b816792e97ef4dab03d7f0b804f6b01a0df35e023
+  version: 1.1.1
+  resolution: "picocolors@npm:1.1.1"
+  checksum: 10c0/e2e3e8170ab9d7c7421969adaa7e1b31434f789afb9b3f115f6b96d91945041ac3ceb02e9ec6fe6510ff036bcc0bf91e69a1772edc0b707e12b19c0f2d6bcf58
   languageName: node
   linkType: hard
 
@@ -5455,9 +5455,9 @@ __metadata:
   linkType: hard
 
 "tslib@npm:^2.4.0":
-  version: 2.7.0
-  resolution: "tslib@npm:2.7.0"
-  checksum: 10c0/469e1d5bf1af585742128827000711efa61010b699cb040ab1800bcd3ccdd37f63ec30642c9e07c4439c1db6e46345582614275daca3e0f4abae29b0083f04a6
+  version: 2.8.0
+  resolution: "tslib@npm:2.8.0"
+  checksum: 10c0/31e4d14dc1355e9b89e4d3c893a18abb7f90b6886b089c2da91224d0a7752c79f3ddc41bc1aa0a588ac895bd97bb99c5bc2bfdb2f86de849f31caeb3ba79bbe5
   languageName: node
   linkType: hard
 
