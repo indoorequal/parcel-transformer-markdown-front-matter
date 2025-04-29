@@ -29,7 +29,10 @@ function renderSite(dir) {
     entries: path.join(dir, 'index.html'),
     defaultConfig: '@parcel/config-default',
     defaultTargetOptions: {
-      distDir: path.join(dir, 'dist')
+      distDir: path.join(dir, 'dist'),
+      engines: {
+        browsers: ['> 0.5%, last 2 versions, not dead']
+      }
     },
     shouldDisableCache: true,
   });
