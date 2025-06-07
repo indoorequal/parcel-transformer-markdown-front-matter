@@ -31,7 +31,7 @@ function renderSite(dir) {
     defaultTargetOptions: {
       distDir: path.join(dir, 'dist'),
       engines: {
-        browsers: ['> 0.5%, last 2 versions, not dead']
+        browsers: ['> 0.1%, last 2 versions']
       }
     },
     shouldDisableCache: true,
